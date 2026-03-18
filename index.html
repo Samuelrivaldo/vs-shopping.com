@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Shopping - Application E-commerce</title>
+    <link rel="icon" href="assets/img/vs-shoping2.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-box h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            margin-bottom: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 10px 5px;
+            transition: transform 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .cta-button.secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .code-block {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+        }
+        .error-notes {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success-notes {
+            background: #d4edda;
+            border: 1px solid #28a745;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 VS Shopping</h1>
+            <p>Plateforme d'E-commerce Sécurisée & Moderne</p>
+        </header>
+
+        <main>
+            <div class="info-box">
+                <h2>ℹ️ À Propos</h2>
+                <p>
+                    <strong>VS Shopping</strong> est une application web d'e-commerce complète développée en PHP avec une architecture moderne et sécurisée.
+                </p>
+                <p>
+                    Cette page est un aperçu du projet. L'application complète nécessite un serveur avec PHP pour fonctionner.
+                </p>
+            </div>
+
+            <div class="success-notes">
+                <strong>✅ Dernière Mise à Jour - Sécurité Améliorée</strong>
+                <p>L'application inclut maintenant :</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>🔐 Configuration centralisée et sécurisée (.env)</li>
+                    <li>🛡️ Protection CSRF sur tous les formulaires</li>
+                    <li>🔒 Prepared Statements pour éviter les injections SQL</li>
+                    <li>🔑 Hachage sécurisé des mots de passe (bcrypt)</li>
+                    <li>📁 Validation stricte des uploads de fichiers</li>
+                    <li>✨ Sanitization XSS complète</li>
+                </ul>
+            </div>
+
+            <h2 style="margin-top: 40px; margin-bottom: 20px;">🌟 Fonctionnalités Principales</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🛍️ Gestion Produits</h3>
+                    <p>Créer, modifier et supprimer des produits avec images et descriptions complètes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👥 Systèmes d'Authentification</h3>
+                    <p>Inscription et connexion sécurisées avec hachage de mots de passe.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔐 Architecture Sécurisée</h3>
+                    <p>Prepared statements, CSRF tokens, sanitization XSS et validation d'uploads.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Tableau de Bord Admin</h3>
+                    <p>Interface administrative pour gérer les produits et les catégories.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Responsive Design</h3>
+                    <p>Interface adaptée à tous les appareils (mobile, tablette, desktop).</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🗄️ Base de Données</h3>
+                    <p>MySQL avec architecture optimisée pour la performance.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h2>🚀 Déploiement</h2>
+                <p>Pour déployer VS Shopping sur un serveur :</p>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Cloner le repository :</strong>
+                        <div class="code-block">git clone https://github.com/Samuelrivaldo/vs-shopping.com.git</div>
+                    </li>
+                    <li><strong>Configurer les variables d'environnement :</strong>
+                        <p>Créer un fichier <code>.env</code> à la racine avec :</p>
+                        <div class="code-block">DB_HOST=votre_host
+DB_NAME=vs-shoppingg
+DB_USER=votre_user
+DB_PASSWORD=votre_password
+APP_ENV=production
+APP_DEBUG=false</div>
+                    </li>
+                    <li><strong>Créer la base de données :</strong>
+                        <p>Importer le schéma MySQL fourni</p>
+                    </li>
+                    <li><strong>Accéder à l'application :</strong>
+                        <p>Le serveur doit pointer vers la racine du projet</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="info-box">
+                <h2>📋 Prérequis Système</h2>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>PHP 7.4+ (avec PDO MySQL activé)</li>
+                    <li>MySQL 5.7+</li>
+                    <li>Apache/Nginx avec support .htaccess</li>
+                    <li>OpenSSL pour HTTPS</li>
+                </ul>
+            </div>
+
+            <div class="error-notes">
+                <strong>⚠️ Note Importante</strong>
+                <p>
+                    GitHub Pages ne supporte que les fichiers statiques. Cette page HTML est un aperçu du projet.
+                    Pour utiliser l'application complète, vous devez la déployer sur un serveur avec PHP.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h2>📁 Structure du Projet</h2>
+                <div class="code-block">vs-shopping.com/
+├── .env                 # Configuration (variables d'environnement)
+├── config.php          # Configuration centralisée & fonctions de sécurité
+├── index.php           # Page d'accueil
+├── connexion.php       # Page de connexion
+├── ajout.php           # Inscription utilisateur
+├── admin/
+│   ├── index.php       # Tableau de bord admin
+│   ├── connexion.php   # Login admin
+│   └── produits/
+│       ├── index.php   # Liste des produits
+│       ├── code.php    # Logique métier (CRUD)
+│       ├── produit-create.php
+│       ├── produit-edit.php
+│       └── produit-view.php
+├── assets/             # CSS, JS, images
+└── forms/              # Formulaires de contact</div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+                <h2 style="margin-bottom: 20px;">🔗 Liens Utiles</h2>
+                <a href="https://github.com/Samuelrivaldo/vs-shopping.com" class="cta-button">📌 Voir le GitHub</a>
+                <a href="https://github.com/Samuelrivaldo/vs-shopping.com/blob/main/README.md" class="cta-button secondary">📖 Documentation</a>
+            </div>
+
+            <div class="info-box">
+                <h2>👨‍💻 Développer Localement</h2>
+                <p>Pour tester l'application en local :</p>
+                <div class="code-block"># Avec XAMPP/WAMP
+1. Cloner le repo dans htdocs
+2. Créer la base de données MySQL
+3. Configurer le fichier .env
+4. Accéder à http://localhost/vs-shopping.com</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 VS Shopping - Tous droits réservés</p>
+            <p>Développé avec ❤️ en PHP | MySQL | Bootstrap</p>
+        </footer>
+    </div>
+</body>
+</html>
