@@ -1,0 +1,6 @@
+# Bloquer l'exécution de scripts PHP
+<FilesMatch "\.php$">
+    Deny from all
+</FilesMatch>
+
+Allow from all

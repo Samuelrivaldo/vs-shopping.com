@@ -1,0 +1,51 @@
+/* Style de base pour le conteneur dt-container */
+.dt-container {
+    margin-top: 10px;
+    background-color: #197b1b;
+    color: #ffffff; /* Couleur du texte en blanc */
+    padding: 20px 0; /* Ajustez les marges intérieures selon vos besoins */
+    text-align: center;
+}
+
+/* Style pour le texte du bloc dt__footer-copyright-text */
+.dt__footer-copyright-text {
+    font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
+}
+
+/* Style pour les liens du menu */
+.menu-copyright-menu-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Supprimez la marge par défaut */
+}
+
+.menu-copyright-menu-container li {
+    margin-bottom: 5px;
+}
+
+.menu-copyright-menu-container a {
+    text-decoration: none;
+    color: #ffffff; /* Couleur du texte en blanc */
+}
+
+.menu-copyright-menu-container a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les écrans de petite taille (mobile) */
+@media (max-width: 767px) {
+    /* Réduire la taille de la police pour le texte du copyright */
+    .dt__footer-copyright-text {
+        font-size: 16px;
+    }
+    
+    /* Centrer les éléments du menu */
+    .menu-copyright-menu-container {
+        text-align: center;
+    }
+    
+    /* Ajuster la marge des éléments du menu pour plus d'espace */
+    .menu-copyright-menu-container li {
+        margin-bottom: 10px;
+    }
+}

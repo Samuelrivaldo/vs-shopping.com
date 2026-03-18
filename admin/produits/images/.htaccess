@@ -1,0 +1,7 @@
+# ===== PROTECTION DU DOSSIER ADMIN =====
+# Bloquer les uploads PHP par accident
+<FilesMatch "\.php$">
+    Deny from all
+</FilesMatch>
+
+Allow from all

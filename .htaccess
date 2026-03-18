@@ -1,0 +1,17 @@
+# ===== PROTECTION DES DOSSIERS SENSIBLES =====
+
+# Bloquer l'accès direct aux fichiers .env et .htaccess
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>
