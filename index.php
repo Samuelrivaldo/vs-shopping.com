@@ -5,9 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
  
-  <title>ACCUEIL</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+ <title>VS Shopping - Application E-commerce PHP Moderne et Sécurisée</title>
+  <!-- SEO Meta Tags -->
+<meta name="description" content="VS Shopping est une application web e-commerce complète en PHP, moderne, sécurisée et performante. Créez et gérez votre boutique en ligne facilement.">
+<meta name="keywords" content="e-commerce PHP, application e-commerce, boutique en ligne, plateforme e-commerce, VS Shopping, site marchand, développement web PHP, solution e-commerce, logiciel e-commerce, boutique en ligne PHP">
+
+<!-- Author & Robots -->
+<meta name="author" content="VS Shopping">
+<meta name="robots" content="index, follow">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://samuelrivaldo.github.io/vs-shopping.com/">
 
   <!-- Favicons -->
   <link href="assets/img/vs-shoping2.png" rel="icon">
